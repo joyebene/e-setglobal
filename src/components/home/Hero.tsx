@@ -29,10 +29,7 @@ const Grid: React.FC<GridProps> = ({text, url}) => {
 const Hero = () => {
   return (
     <div
-      // initial={{ opacity: 0 }}
-      // animate={{ opacity: 1 }}
-      // transition={{ duration: 1 }}
-      className='pt-[6rem] lg:pt-[7rem] w-full h-screen bg-cover bg-center bg-no-repeat bg-[url("/assets/hero-img.jpg")]'
+      className='pt-[6rem] lg:pt-[7rem] w-full h-[calc(100vh-2rem)] bg-cover bg-center bg-no-repeat bg-[url("/assets/hero-img.jpg")]'
     >
       <div className='w-full h-full text-white bg-black/40 flex flex-col items-center justify-center pt-32'>
         <motion.div
@@ -41,7 +38,7 @@ const Hero = () => {
           transition={{ duration: 0.7 }}
           className='flex flex-col items-center justify-center h-2/3 gap-2 md:gap-3 leading-tight tracking-tight'
         >
-          <p className='text-sm sm:text-xl lg:text-2xl text-center'>Ditch the past, Move Foward With Renewables.</p>
+          <p className='text-sm sm:text-xl lg:text-2xl text-center text-white'>Ditch the past, Move Foward With Renewables.</p>
           <h1 className='text-3xl md:text-5xl lg:text-6xl xl:text-7xl text-center'>
             Power Your Future With <br /> E-SET GLOBAL
           </h1>

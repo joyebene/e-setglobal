@@ -41,7 +41,7 @@ const Navbar = () => {
               <p className='text-xl'>E-SET <span className='text-green-700'>GLOBAL</span></p>
               <p className='text-[10px]'>SOLUTION SERVICES LIMITED</p>
             </div> </div>
-            <div onClick={() => setOpenNav(true)} className='mt-3'><Menu size={40} /></div>
+            <div onClick={() => setOpenNav(true)} className='mt-3'><Menu size={40} color='black' /></div>
           </div>
 
           <AnimatePresence>
@@ -62,7 +62,7 @@ const Navbar = () => {
                       <p className='text-lg'>E-SET <span className='text-green-700'>GLOBAL</span></p>
                       <p className='text-[9px]'>SOLUTION SERVICES LIMITED</p>
                     </div> </div>
-                    <X size={30} onClick={() => setOpenNav(false)} />
+                    <X size={30} onClick={() => setOpenNav(false)} color='black' />
                   </div>
                   <div>
                     <p className='text-xl mb-3 text-gray-900 font-bold'>Menu</p>
