@@ -17,8 +17,8 @@ const TeamList = ({ name, role, img }: TeamListProps) => {
             transition={{ duration: 0.6 }}>
             <Image src={img} alt='img' width={50} height={50} className='w-full h-50 rounded-2xl object-center object-cover' />
             <div className='px-2 lg:px-3 py-3'>
-                <h3 className='font-bold md:text-lg'>{name}</h3>
-                <p className='mt-1 text-sm'>{role}</p>
+                <h3 className='font-bold text-[13px] sm:text-base md:text-lg'>{name}</h3>
+                <p className='mt-1 text-[11px] sm:text-sm'>{role}</p>
             </div>
         </motion.div>
     )
@@ -34,7 +34,7 @@ const Teams = () => {
                     transition={{ duration: 0.6 }}>
                     <p className='text-[10px] sm:text-sm lg:text-base text-gray-900 px-4 py-3 shadow-lg rounded-full w-fit flex items-center justify-center gap-2 mb-5 md:mb-6 lg:mb-8 bg-white'><span className='w-3 h-3 lg:w-4 lg:h-4 bg-green-700 rounded-full p-1 text-black flex items-center justify-center shadow-md'>.</span>Our Teams<span className='w-3 h-3 lg:w-4 lg:h-4 bg-green-700 rounded-full p-1 text-black flex items-center justify-center shadow-md'>.</span></p>
                     <h1 className='font-bold text-2xl sm:text-3xl lg:text-4xl text-gray-900'><span className='text-green-700 mb-2'>Team</span> Members</h1>
-                    <p className='text-center mt-4 lg:mt-6 sm:text-lg'>Our success is driven by a team of dedicated professionals with expertise in energy solutions, project management, and administration.</p>
+                    <p className='text-center mt-2 lg:mt-4 sm:text-lg'>Our success is driven by a team of dedicated professionals with expertise in energy solutions, project management, and administration.</p>
                 </motion.div>
                 <div className='flex flex-wrap items-center justify-center gap-8'>
                     <TeamList img='/assets/members-img.jpg' role='CEO & Project Director' name='Izah Ego Famous' />
