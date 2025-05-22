@@ -23,7 +23,7 @@ const Navbar = () => {
   const NavLink: React.FC<NavLinkProps> = ({ url, icon, name, className, desktopNav }) => {
     console.log('motion', motion);
     return (
-      <li className={`p-2 py-4 transition-all duration-200 ${className} ${pathName === url && desktopNav ? "text-2xl text-green-700" : " "}`} onClick={() => setOpenNav(false)}><Link href={url} className='flex gap-2 items-center'>{icon}{name}</Link></li>
+      <li className={`p-2 py-3 transition-all duration-200 ${className} ${pathName === url && desktopNav ? "text-2xl text-green-700" : " "}`} onClick={() => setOpenNav(false)}><Link href={url} className='flex gap-2 items-center'>{icon}{name}</Link></li>
     )
   }
 
@@ -31,7 +31,7 @@ const Navbar = () => {
 
 
   return (
-    <div className='p-4 lg:pt-3 lg:px-8 bg-white fixed w-screen h-[6rem] lg:h-[8rem] z-1'>
+    <div className='p-4 lg:pt-3 lg:px-8 bg-white fixed w-screen h-[6rem] lg:h-[7rem] z-1'>
       <div>
 
         {/* Mobile Navbar */}

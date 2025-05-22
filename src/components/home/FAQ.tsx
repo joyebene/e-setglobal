@@ -40,7 +40,7 @@ const FAQ = () => {
                 className="relative z-10 max-w-3xl text-left"
             >
                 <p className='text-[10px] md:text-base mb-2 md:mb-3'>Leading the way in sustainable energy transformation.</p>
-                <h1 className="font-bold text-white text-2xl sm:text-3xl md:text-4xl xl:text-5xl mb-4">Ready Ecology Power</h1>
+                <h1 className="font-bold text-white text-2xl sm:text-3xl lg:text-4xl mb-4">Ready Ecology Power</h1>
                 <p className="text-gray-200 mb-6 sm:text-lg">
                     Find the best technologies which qualify as clean solar energy,
                     industrial policies, and replacements that help make future sustainable power systems.

@@ -17,7 +17,7 @@ const ServiceBox: React.FC<ServiceBoxProps> = ({ title, img, text }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false, amount: 0.3 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
-      className="w-full sm:w-[48%] md:w-[45%] lg:w-[23%] hover:bg-green-700 text-white transition-all duration-300 p-4 rounded-xl bg-black/30 backdrop-blur-md shadow-lg"
+      className="w-full sm:w-[48%] md:w-[45%] hover:bg-green-700 text-white transition-all duration-300 p-4 rounded-xl bg-black/30 backdrop-blur-md shadow-lg"
     >
       <div className="flex flex-col items-start justify-center gap-3">
         <Image src={img} width={50} height={50} alt="img" />
@@ -47,7 +47,7 @@ const Services = () => {
               <p className="text-[10px] md:text-base mb-2 md:mb-3">
                 Empowering Homes and Businesses with Smart, Sustainable Energy Solutions.
               </p>
-              <h1 className="font-bold text-white text-2xl sm:text-3xl md:text-4xl xl:text-5xl">
+              <h1 className="font-bold text-white text-2xl sm:text-3xl lg:text-4xl">
                 We Offer Special Solar Energy
               </h1>
             </motion.div>

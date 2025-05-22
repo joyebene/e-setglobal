@@ -37,7 +37,7 @@ export default function HomePage() {
             <p className="text-[10px] md:text-base">
               Turning sunlight into smart, sustainable power.
             </p>
-            <h1 className="font-bold text-2xl sm:text-3xl md:text-4xl xl:text-5xl text-gray-900">
+            <h1 className="font-bold text-2xl sm:text-3xl lg:text-4xl text-gray-900">
               Harnessing Power of the Elements
             </h1>
             <p className="sm:text-lg mt-3 sm:mt-4">
