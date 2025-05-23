@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { MapPin, Phone, Mail, Instagram, MailIcon, LocationEditIcon } from "lucide-react";
+import { Phone, Instagram, MailIcon, LocationEditIcon } from "lucide-react";
 
 interface SocialLinksProps {
   title: string,
@@ -17,7 +17,7 @@ const SocialLinks = ({title, icon, text}: SocialLinksProps) => {
   )
 }
 
-const page = () => {
+const ContactPage = () => {
 
    const [formData, setFormData] = useState({
           name: "",
@@ -57,7 +57,7 @@ const page = () => {
           <div className='h-[calc(35vh-2rem)] lg:h-[calc(50vh-2rem)] w-full pt-[6rem] lg:pt-[7rem] bg-cover bg-center bg-no-repeats bg-[url("/assets/hero3-img.png")]'>
         <div className='bg-black/50 h-full flex items-center justify-center'>
             <div>
-                <h1 className='text-3xl md:text-5xl xl:text-6xl text-center text-white'>Our Services</h1>
+                <h1 className='text-3xl md:text-5xl xl:text-6xl text-center text-white'>Contact Us</h1>
             </div>
         </div>
     </div>
@@ -77,7 +77,7 @@ const page = () => {
             </div>
 
             {/* Form Section */}
-            <div>
+            <div className="w-1/2">
                <form onSubmit={handleSubmit} className="space-y-4">
                     <input
                         type="text"
@@ -136,4 +136,4 @@ const page = () => {
   )
 }
 
-export default page;
+export default ContactPage;
