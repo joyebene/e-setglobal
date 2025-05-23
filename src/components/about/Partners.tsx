@@ -24,7 +24,7 @@ const PartnerList = ({ text, className }: PartnerListProps) => {
 const Partners = () => {
     return (
         <div className='w-full h-fit xl::h-[calc(70vh-2rem)] bg-cover bg-center bg-no-repea bg-[url("/assets/hero2-img.png")]'>
-            <div className='bg-black/40 w-full h-full py-12 px-6 pr-9 md:px-24 xl:px-60 flex flex-col items-center justify-center gap-8 lg:gap-16'>
+            <div className='bg-black/40 w-full h-full py-12 px-6 lg:pr-9 md:px-24 xl:px-60 flex flex-col items-center justify-center gap-8 lg:gap-16'>
                 <motion.div className='flex flex-col items-center justify-center' initial={{ opacity: 0, y: -30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false }}
