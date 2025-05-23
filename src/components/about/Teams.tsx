@@ -11,7 +11,7 @@ interface TeamListProps {
 
 const TeamList = ({ name, role, img }: TeamListProps) => {
     return (
-        <motion.div className='bg-white text-gray-900 w-full sm:w-[38%] xl:w-[20%] rounded-2xl shadow-2xl' initial={{ opacity: 0, y: 50 }}
+        <motion.div className='bg-white text-gray-900 w-full sm:w-[38%] xl:w-[20%] rounded-lg lg:rounded-2xl shadow-xl' initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.6 }}>

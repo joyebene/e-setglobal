@@ -12,7 +12,7 @@ const SocialLinks = ({title, icon, text}: SocialLinksProps) => {
   return( 
     <div className="flex gap-1 items-center mb-4">
       <div className="bg-green-700 text-white p-2 rounded-lg">{icon}</div>
-      <div className="flex flex-col justify-center"><h2 className="font-semibold text-gray-900">{title}</h2> <p className="text-[13px] lg:text-sm text-gray-600">{text}</p></div>
+      <div className="flex flex-col justify-center"><h2 className="font-semibold text-gray-900 text-sm md:text-base ">{title}</h2> <p className="text-[10px] sm:text-[14px] lg:text-sm text-gray-600">{text}</p></div>
     </div>
   )
 }
@@ -62,22 +62,22 @@ const ContactPage = () => {
         </div>
     </div>
         <div className="bg-white py-12 px-6 pr-9 md:px-24 xl:px-60 flex flex-col justify-center gap-6 lg:gap-10">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col lg:flex-row items-center justify-between">
 
             {/* Get In Touch Section */}
             <div>
-              <h1 className="font-bold md:text-lg xl:text-xl">Get In Touch</h1>
-              <p className="text-gray-600 text-[14px] lg:text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia laboriosam omnis veritatis amet delectus quasi.</p>
+              <h1 className="font-bold text-2xl sm:text-3xl lg:text-4xl mb-1 lg:mb-2">Get In Touch</h1>
+              <p className="text-gray-600 text-[14px] lg:text-sm mb-4 lg:mb-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia laboriosam omnis veritatis amet delectus quasi.</p>
               <div className="grid grid-cols-2">
-                <SocialLinks title="Phone" icon={<Phone />} text="+2348035047852" />
-                <SocialLinks title="Email" icon={<MailIcon />} text="esetgloballtd@gmail.com" />
-                <SocialLinks title="Address" icon={<LocationEditIcon />} text="Area 11, Garki, Abuja, Nigeria" />
-                <SocialLinks title="Instagram" icon={<Instagram />} text="insta.com" />
+                <SocialLinks title="Phone" icon={<Phone className="h-4 w-4 lg:h-6 lg:w-6" />} text="+2348035047852" />
+                <SocialLinks title="Email" icon={<MailIcon className="h-4 w-4 lg:h-6 lg:w-6" />} text="esetgloballtd@gmail.com" />
+                <SocialLinks title="Address" icon={<LocationEditIcon className="h-4 w-4 lg:h-6 lg:w-6" />} text="Area 11, Garki, Abuja, Nigeria" />
+                <SocialLinks title="Instagram" icon={<Instagram className="h-4 w-4 lg:h-6 lg:w-6" />} text="insta.com" />
               </div>
             </div>
 
             {/* Form Section */}
-            <div className="w-1/2">
+            <div className="w-full lg:w-1/2 mt-8 lg:mt-16 border border-gray-200 bg-blue-50 rounded-xl px-4 py-6">
                <form onSubmit={handleSubmit} className="space-y-4">
                     <input
                         type="text"
@@ -86,7 +86,7 @@ const ContactPage = () => {
                         value={formData.name}
                         onChange={handleChange}
                         required
-                        className="w-full border border-gray-300 rounded-md p-3"
+                        className="w-full border border-gray-300 bg-white rounded-md p-3"
                     />
                     <input
                         type="email"
@@ -95,7 +95,7 @@ const ContactPage = () => {
                         value={formData.email}
                         onChange={handleChange}
                         required
-                        className="w-full border border-gray-300 rounded-md p-3"
+                        className="w-full border border-gray-300 bg-white rounded-md p-3"
                     />
                     <input
                         type="text"
@@ -103,7 +103,7 @@ const ContactPage = () => {
                         placeholder="Phone Number"
                         value={formData.phone}
                         onChange={handleChange}
-                        className="w-full border border-gray-300 rounded-md p-3"
+                        className="w-full border border-gray-300  bg-white rounded-md p-3"
                     />
                     <textarea
                         name="message"
@@ -111,7 +111,7 @@ const ContactPage = () => {
                         value={formData.message}
                         onChange={handleChange}
                         required
-                        className="w-full border border-gray-300 rounded-md p-3 h-34"
+                        className="w-full border border-gray-300 bg-white rounded-md p-3 h-34"
                     ></textarea>
                     <button
                         type="submit"
