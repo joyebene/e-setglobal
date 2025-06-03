@@ -11,7 +11,7 @@ interface TeamListProps {
 
 const TeamList = ({ name, role, img }: TeamListProps) => {
     return (
-        <motion.div className='bg-white text-gray-900 w-full sm:w-[38%] xl:w-[20%] rounded-lg lg:rounded-2xl shadow-xl' initial={{ opacity: 0, y: 50 }}
+        <motion.div className='bg-white text-gray-900 w-full sm:w-[38%] xl:w-[23%] rounded-lg lg:rounded-2xl shadow-xl' initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.6 }}>
@@ -36,11 +36,11 @@ const Teams = () => {
                     <h1 className='font-bold text-2xl sm:text-3xl lg:text-4xl text-gray-900'><span className='text-green-700 mb-2'>Team</span> Members</h1>
                     <p className='text-center mt-2 lg:mt-4 sm:text-lg'>Our success is driven by a team of dedicated professionals with expertise in energy solutions, project management, and administration.</p>
                 </motion.div>
-                <div className='flex flex-wrap items-center justify-center gap-8'>
-                    <TeamList img='/assets/members-img.jpg' role='CEO & Project Director' name='Izah Ego Famous' />
+                <div className='flex flex-wrap items-center justify-center gap-5'>
+                    <TeamList img='/assets/img1.jpg' role='CEO & Project Director' name='Izah Ego Famous' />
                     <TeamList img='/assets/members-img.jpg' role='Technical Director' name='Afeng Sampson' />
-                    <TeamList img='/assets/members-img.jpg' role='Director of Administration' name='Doom Akpam Izah' />
-                    <TeamList img='/assets/members-img.jpg' role='Executive Secretary ' name='Rachael Akpam ' />
+                    <TeamList img='/assets/img3.jpg' role='Director of Administration' name='Doom Akpam Izah' />
+                    <TeamList img='/assets/img2.jpg' role='Executive Secretary ' name='Rachael Akpam ' />
                 </div>
             </div>
         </div>

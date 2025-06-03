@@ -36,9 +36,9 @@ const Contact = () => {
     };
 
     return (
-        <div className="w-full min-h-screen bg-green-100/20 px-6 md:px-24 lg:px-40 xl:px-60 py-16">
+        <div className="w-full min-h-screen bg-green-700/60 px-6 md:px-24 lg:px-40 xl:px-60 py-16">
             <div className="my-4 md:my-6 pb-3 md:pb-6">
-                <h1 className="font-bold text-gray-900 text-2xl sm:text-3xl lg:text-4xl">Contact Us</h1>
+                <h1 className="font-bold text-white text-2xl sm:text-3xl lg:text-4xl">Contact Us</h1>
             </div>
             <div className="w-full max-w-10xl bg-white rounded-xl shadow-sm md:shadow-md p-6 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
 
@@ -89,7 +89,7 @@ const Contact = () => {
                 <div className="space-y-5 mt-6">
                     {/* Map */}
                     <div className="overflow-hidden flex items-center lg:items-start justify-center">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31521.70521774573!2d7.478486648475849!3d9.044311783988913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSuite%2020%2C%20Mangal%20Plaza%2C!5e0!3m2!1sen!2sng!4v1747204218492!5m2!1sen!2sng" width="700" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-[300px] md:w-[600px] lg:w-[700px] h-[250px] md:h-[350px] lg:h-[450px] rounded-xl md:rounded-2xl"></iframe>
+                        <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31521.70521774573!2d7.478486648475849!3d9.044311783988913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSuite%2020%2C%20Mangal%20Plaza%2C!5e0!3m2!1sen!2sng!4v1747204218492!5m2!1sen!2sng" width="700" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-[300px] md:w-[600px] lg:w-[700px] h-[250px] md:h-[350px] lg:h-[450px] rounded-xl md:rounded-2xl"></iframe>
                     </div>
 
                     {/* Address Info */}
