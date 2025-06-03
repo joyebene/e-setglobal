@@ -61,7 +61,7 @@ export default function Sections() {
                 >
                     {/* Text section */}
                     <div className={`${index === 1 ? 'md:order-2' : 'md:order-1'}`}>
-                        <h2 className="text-2xl font-bold mb-4">{section.title}</h2>
+                        <h2 className="text-2xl font-bold mb-4 text-gray-900">{section.title}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {section.items.map((item, i) => (
                                 <div

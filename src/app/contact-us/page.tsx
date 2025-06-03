@@ -62,7 +62,7 @@ const ContactPage = () => {
         </div>
     </div>
         <div className="bg-white py-12 px-6 pr-9 md:px-24 xl:px-60 flex flex-col justify-center gap-6 lg:gap-10">
-          <div className="flex flex-col lg:flex-row items-center justify-between">
+          <div className="flex flex-col lg:flex-row items-center justify-between text-gray-900">
 
             {/* Get In Touch Section */}
             <div>
@@ -127,7 +127,7 @@ const ContactPage = () => {
           <div className="space-y-5 mt-6 w-full">
                     {/* Map */}
                     <div className="overflow-hidden flex items-center lg:items-start justify-center">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31521.70521774573!2d7.478486648475849!3d9.044311783988913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSuite%2020%2C%20Mangal%20Plaza%2C!5e0!3m2!1sen!2sng!4v1747204218492!5m2!1sen!2sng" width="700" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-full h-[200px] md:h-[250px] lg:h-[300px] rounded-xl md:rounded-2xl"></iframe>
+                        <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31521.70521774573!2d7.478486648475849!3d9.044311783988913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sSuite%2020%2C%20Mangal%20Plaza%2C!5e0!3m2!1sen!2sng!4v1747204218492!5m2!1sen!2sng" width="700" height="450" allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" className="w-full h-[200px] md:h-[250px] lg:h-[300px] rounded-xl md:rounded-2xl"></iframe>
                     </div>
                 </div>
         </div>

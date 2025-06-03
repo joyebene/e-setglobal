@@ -21,10 +21,10 @@ const Gallery = () => {
   };
 
   return (
-    <div className='w-full h-full flex flex-col justify-center py-12 md:py-20 px-6 md:px-24 xl:px-60 gap-10 lg:gap-20'>
+    <div className='w-full h-full flex flex-col justify-center py-12 md:py-20 px-6 md:px-24 xl:px-60 gap-10 lg:gap-20 bg-white text-gray-900'>
       <div>
         <p className="text-xs sm:text-sm bg-white shadow px-4 py-2 rounded-full w-fit mb-4">
-          <span className="inline-block w-2 h-2 bg-green-700 rounded-full mr-2" />
+          <span className="inline-block w-2 h-2 bg-green-700 rounded-full mr-2 text-gray-900" />
           Our Gallery
           <span className="inline-block w-2 h-2 bg-green-700 rounded-full ml-2" />
         </p>

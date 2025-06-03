@@ -32,7 +32,7 @@ const Grid = ({ img, title, text }: GridProps) => {
 const Intro = () => {
   return (
     <motion.div
-      className="bg-white min-h-screen"
+      className="bg-white min-h-screen text-gray-900"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: false }}
@@ -49,7 +49,7 @@ const Intro = () => {
               transition={{ duration: 0.6 }}
               viewport={{ once: false }}
             >
-              <p className="text-xs sm:text-sm bg-white shadow px-4 py-2 rounded-full w-fit mb-4">
+              <p className="text-xs sm:text-sm bg-white text-gray-900 shadow px-4 py-2 rounded-full w-fit mb-4">
                 <span className="inline-block w-2 h-2 bg-green-700 rounded-full mr-2" />
                 About Us
                 <span className="inline-block w-2 h-2 bg-green-700 rounded-full ml-2" />
