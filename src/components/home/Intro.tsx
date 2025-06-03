@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 export default function HomePage() {
   return (
     <div className="overflow-x-hidden">
-      <section className="bg-white w-screen h-[calc(100vh-10rem)] xl:h-[calc(100vh-6rem)]">
+      <section className="bg-white text-gray-900 w-screen h-[calc(100vh-10rem)] xl:h-[calc(100vh-6rem)]">
         <div className="flex flex-col md:flex-row items-center justify-start md:justify-center gap-10 w-full h-full py-20 md:py-0 px-6 pr-9 md:px-24 xl:px-60">
 
           {/* Image Section */}
@@ -41,7 +41,7 @@ export default function HomePage() {
               Harnessing Power of the Elements
             </h1>
             <p className="sm:text-lg mt-3 sm:mt-4">
-             We transform natural energy—like sunlight—into reliable, sustainable power solutions. At E-SET GLOBAL, we’re committed to clean energy that drives progress and protects our planet.
+             We transform natural energy—like sunlight—into reliable, sustainable power solutions. At E-SET GLOBAL, we&apos;re committed to clean energy that drives progress and protects our planet.
             </p>
 
             <div className="flex gap-3 md:gap-4 items-center mt-4 sm:mt-16">

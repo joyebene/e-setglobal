@@ -48,7 +48,7 @@ export default function Sections() {
     ];
 
     return (
-        <div className="space-y-16 py-12 px-6 pr-9 md:px-24 xl:px-60 text-gray-900 mb-6">
+        <div className="space-y-16 py-12 px-6 pr-9 md:px-24 xl:px-60 text-gray-900 mb-6 bg-white">
             {sections.map((section, index) => (
                 <motion.div
                     key={index}
