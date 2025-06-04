@@ -6,7 +6,7 @@ import { X, ArrowLeft, ArrowRight } from 'lucide-react';
 const Gallery = () => {
   const [selectedImageId, setSelectedImageId] = useState<number | null>(null);
 
-  const imageIds = Array.from({ length: 122 }, (_, i) => i + 1);
+  const imageIds = Array.from({ length: 141 }, (_, i) => i + 1);
 
   const handlePrev = () => {
     if (selectedImageId && selectedImageId > 1) {

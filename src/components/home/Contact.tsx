@@ -40,7 +40,7 @@ const Contact = () => {
             <div className="my-4 md:my-6 pb-3 md:pb-6">
                 <h1 className="font-bold text-white text-2xl sm:text-3xl lg:text-4xl">Contact Us</h1>
             </div>
-            <div className="w-full md:max-w-10xl bg-white rounded-xl shadow-sm md:shadow-md px-2 py-6 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+            <div className="w-full md:max-w-10xl bg-white rounded-xl shadow-sm md:shadow-md p-6 md:p-10 grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
 
                 <form onSubmit={handleSubmit} className="space-y-4">
                     <input
