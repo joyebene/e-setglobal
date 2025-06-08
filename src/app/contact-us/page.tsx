@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Phone, Instagram, MailIcon, LocationEditIcon } from "lucide-react";
+import { Phone, Instagram, MailIcon, LocationEditIcon, PhoneCall, Video } from "lucide-react";
 
 interface SocialLinksProps {
   title: string,
@@ -67,12 +67,14 @@ const ContactPage = () => {
             {/* Get In Touch Section */}
             <div>
               <h1 className="font-bold text-2xl sm:text-3xl lg:text-4xl mb-1 lg:mb-2">Get In Touch</h1>
-              <p className="text-gray-600 text-[14px] lg:text-sm mb-4 lg:mb-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia laboriosam omnis veritatis amet delectus quasi.</p>
+              <p className="text-gray-600 text-[14px] lg:text-sm mb-4 lg:mb-6">Contact us to learn more about our solar solutions and how we can help you save energy and money.</p>
               <div className="grid grid-cols-2">
-                <SocialLinks title="Phone" icon={<Phone className="h-4 w-4 lg:h-6 lg:w-6" />} text="+2348035047852" />
+                <SocialLinks title="Phone" icon={<PhoneCall className="h-4 w-4 lg:h-6 lg:w-6" />} text="+2348035047852" />
                 <SocialLinks title="Email" icon={<MailIcon className="h-4 w-4 lg:h-6 lg:w-6" />} text="esetgloballtd@gmail.com" />
                 <SocialLinks title="Address" icon={<LocationEditIcon className="h-4 w-4 lg:h-6 lg:w-6" />} text="Area 11, Garki, Abuja, Nigeria" />
-                <SocialLinks title="Instagram" icon={<Instagram className="h-4 w-4 lg:h-6 lg:w-6" />} text="insta.com" />
+                <SocialLinks title="Instagram" icon={<Instagram className="h-4 w-4 lg:h-6 lg:w-6" />} text="@egoizah" />
+                <SocialLinks title="Whatsapp" icon={<Phone className="h-4 w-4 lg:h-6 lg:w-6" />} text="+2348035047852" />
+                <SocialLinks title="Tiktok" icon={<Video className="h-4 w-4 lg:h-6 lg:w-6" />} text="@fame363" />
               </div>
             </div>
 

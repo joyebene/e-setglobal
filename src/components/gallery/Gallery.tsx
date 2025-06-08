@@ -6,7 +6,7 @@ import { X, ArrowLeft, ArrowRight } from 'lucide-react';
 const Gallery = () => {
   const [selectedImageId, setSelectedImageId] = useState<number | null>(null);
 
-  const imageIds = Array.from({ length: 141 }, (_, i) => i + 1);
+  const imageIds = Array.from({ length: 166 }, (_, i) => i + 1);
 
   const handlePrev = () => {
     if (selectedImageId && selectedImageId > 1) {
@@ -15,13 +15,13 @@ const Gallery = () => {
   };
 
   const handleNext = () => {
-    if (selectedImageId && selectedImageId < 122) {
+    if (selectedImageId && selectedImageId < 166) {
       setSelectedImageId(selectedImageId + 1);
     }
   };
 
   return (
-    <div className='w-full h-full flex flex-col justify-center py-12 md:py-20 px-6 md:px-24 xl:px-60 gap-10 lg:gap-20 bg-white text-gray-900'>
+    <div className='w-full h-full flex flex-col justify-center py-12 md:py-20 px-6 md:px-24 xl:px-60 gap-6 sm:gap-8 lg:gap-10 bg-white text-gray-900'>
       <div>
         <p className="text-xs sm:text-sm bg-white shadow px-4 py-2 rounded-full w-fit mb-4">
           <span className="inline-block w-2 h-2 bg-green-700 rounded-full mr-2 text-gray-900" />
@@ -32,7 +32,10 @@ const Gallery = () => {
           Our Gallery
         </h1>
       </div>
-
+      <div className='w-full'>
+         <p className='text-[11px] sm:text-sm pt-4'>Numbers of Gallery: <span className='font-semibold '>166</span></p>
+      </div>
+      
       <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
         {imageIds.map(id => (
           <div
@@ -49,6 +52,7 @@ const Gallery = () => {
           </div>
         ))}
       </div>
+   
 
       {/* Fullscreen View with Navigation */}
       {selectedImageId && (

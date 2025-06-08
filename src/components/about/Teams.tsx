@@ -40,7 +40,7 @@ const Teams = () => {
                     <TeamList img='/assets/img1.jpg' role='CEO & Project Director' name='Izah Ego Famous' />
                     <TeamList img='/assets/members-img.jpg' role='Technical Director' name='Afeng Sampson' />
                     <TeamList img='/assets/img3.jpg' role='Director of Administration' name='Doom Akpam Izah' />
-                    <TeamList img='/assets/img2.jpg' role='Executive Secretary ' name='Rachael Akpam ' />
+                    <TeamList img='/assets/img2.jpg' role='Executive Secretary ' name='Racheal Akpam ' />
                 </div>
             </div>
         </div>
