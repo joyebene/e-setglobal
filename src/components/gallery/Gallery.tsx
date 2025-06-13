@@ -6,7 +6,7 @@ import { X, ArrowLeft, ArrowRight } from 'lucide-react';
 const Gallery = () => {
   const [selectedImageId, setSelectedImageId] = useState<number | null>(null);
 
-  const imageIds = Array.from({ length: 166 }, (_, i) => i + 1);
+  const imageIds = Array.from({ length: 160 }, (_, i) => i + 1);
 
   const handlePrev = () => {
     if (selectedImageId && selectedImageId > 1) {
@@ -15,7 +15,7 @@ const Gallery = () => {
   };
 
   const handleNext = () => {
-    if (selectedImageId && selectedImageId < 166) {
+    if (selectedImageId && selectedImageId < 160) {
       setSelectedImageId(selectedImageId + 1);
     }
   };
@@ -33,7 +33,7 @@ const Gallery = () => {
         </h1>
       </div>
       <div className='w-full'>
-         <p className='text-[11px] sm:text-sm pt-4'>Numbers of Gallery: <span className='font-semibold '>166</span></p>
+         <p className='text-[11px] sm:text-sm pt-4'>Numbers of Gallery: <span className='font-semibold '>160</span></p>
       </div>
       
       <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
@@ -76,7 +76,7 @@ const Gallery = () => {
 
           <button type='button'
             onClick={handleNext}
-            disabled={selectedImageId === 122}
+            disabled={selectedImageId === 160}
             className='absolute right-4 z-50 text-white bg-black/70 hover:bg-black/60 p-2 rounded-full'
             aria-label="Next"
           >
